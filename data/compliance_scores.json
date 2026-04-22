@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "VIDS Compliance Analysis: Four Public Medical Imaging Datasets",
+    "paper": "arXiv:2604.17525",
+    "methodology": "Section 5.1 of the paper",
+    "scoring": {
+      "satisfied": 1.0,
+      "partial": 0.5,
+      "absent": 0.0,
+      "partial_definition": "Information is present in the dataset but not in a machine-readable or standardized form (e.g., provenance described in a companion paper but absent from the dataset files)."
+    },
+    "date": "2026-04-21"
+  },
+  "dimensions": [
+    {
+      "id": "S1",
+      "category": "Structure",
+      "dimension": "Dataset marker",
+      "description": "Machine-readable file identifying the dataset as conforming to a standard and declaring the compliance profile.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "S2",
+      "category": "Structure",
+      "dimension": "Dataset description",
+      "description": "Structured metadata file with dataset name, version, license, description, and authors in machine-readable format.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.5,
+      "MSD": 0.5
+    },
+    {
+      "id": "S3",
+      "category": "Structure",
+      "dimension": "Participant registry",
+      "description": "Structured file listing all subjects with demographics and inclusion criteria.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.5,
+      "MSD": 0.0
+    },
+    {
+      "id": "S4",
+      "category": "Structure",
+      "dimension": "Human-readable README",
+      "description": "Plain-language description of the dataset, its contents, and usage instructions.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.5,
+      "MSD": 0.5
+    },
+    {
+      "id": "S5",
+      "category": "Structure",
+      "dimension": "Subject hierarchy",
+      "description": "Consistent per-subject directory structure with standardized naming.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.5,
+      "CheXpert": 0.0,
+      "MSD": 0.5
+    },
+    {
+      "id": "S6",
+      "category": "Structure",
+      "dimension": "Session hierarchy",
+      "description": "Per-session directory nesting within each subject.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "I1",
+      "category": "Imaging",
+      "dimension": "Standardized format (NIfTI)",
+      "description": "Imaging data stored in NIfTI format with valid affine transformation.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 1.0,
+      "CheXpert": 0.0,
+      "MSD": 1.0
+    },
+    {
+      "id": "I2",
+      "category": "Imaging",
+      "dimension": "Per-image metadata sidecar",
+      "description": "Structured JSON sidecar per imaging file documenting acquisition parameters, source format, and quality assessment.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "I3",
+      "category": "Imaging",
+      "dimension": "Consistent file naming",
+      "description": "All imaging files follow a standardized naming convention encoding subject, session, and modality.",
+      "LIDC-IDRI": 1.0,
+      "BraTS": 1.0,
+      "CheXpert": 1.0,
+      "MSD": 1.0
+    },
+    {
+      "id": "A1",
+      "category": "Annotation",
+      "dimension": "Structured annotation directory",
+      "description": "Annotations stored in a dedicated directory tree mirroring the source imaging layout.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 1.0,
+      "CheXpert": 0.0,
+      "MSD": 1.0
+    },
+    {
+      "id": "A2",
+      "category": "Annotation",
+      "dimension": "Segmentation masks",
+      "description": "Segmentation annotations provided as volumetric mask files with integer class labels.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 1.0,
+      "CheXpert": 0.0,
+      "MSD": 1.0
+    },
+    {
+      "id": "A3",
+      "category": "Annotation",
+      "dimension": "Per-annotation metadata sidecar",
+      "description": "Structured JSON sidecar per annotation file documenting annotation type, source image, and label map.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "A4",
+      "category": "Annotation",
+      "dimension": "Machine-readable label map",
+      "description": "Mapping of integer voxel values to class names provided in structured format.",
+      "LIDC-IDRI": 1.0,
+      "BraTS": 0.0,
+      "CheXpert": 1.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "P1",
+      "category": "Provenance",
+      "dimension": "Annotator identity",
+      "description": "Each annotation documents the identity (name or ID) of the annotator.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "P2",
+      "category": "Provenance",
+      "dimension": "Annotator credentials",
+      "description": "Each annotation documents the qualifications and experience of the annotator.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "P3",
+      "category": "Provenance",
+      "dimension": "Annotation tool",
+      "description": "Each annotation documents the software tool and version used.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "P4",
+      "category": "Provenance",
+      "dimension": "Annotation date",
+      "description": "Each annotation documents the date it was created.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "P5",
+      "category": "Provenance",
+      "dimension": "QC review documented",
+      "description": "Each annotation documents whether quality control review was performed, by whom, and the outcome.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "Q1",
+      "category": "Quality",
+      "dimension": "Inter-annotator agreement",
+      "description": "Dataset includes structured documentation of agreement metrics (e.g., Dice coefficient) between annotators.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "Q2",
+      "category": "Quality",
+      "dimension": "Quality summary",
+      "description": "Dataset includes a structured quality summary with annotation statistics, QC pass rates, and certification.",
+      "LIDC-IDRI": 0.5,
+      "BraTS": 0.5,
+      "CheXpert": 0.0,
+      "MSD": 0.0
+    },
+    {
+      "id": "M1",
+      "category": "ML Readiness",
+      "dimension": "Documented splits",
+      "description": "Train/validation/test splits provided in structured format.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.5,
+      "CheXpert": 0.5,
+      "MSD": 0.5
+    },
+    {
+      "id": "M2",
+      "category": "ML Readiness",
+      "dimension": "Split rationale",
+      "description": "Documentation of split strategy, random seed, leakage prevention, and rationale.",
+      "LIDC-IDRI": 0.0,
+      "BraTS": 0.5,
+      "CheXpert": 0.5,
+      "MSD": 0.5
+    }
+  ]
+}
