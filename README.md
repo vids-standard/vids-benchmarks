@@ -60,7 +60,7 @@ The 22 dimensions span six categories:
 - **Quality (2)** — inter-annotator agreement and class distribution
 - **ML Readiness (2)** — splits and leakage prevention
 
-Each dimension definition, scoring criterion, and per-dataset rationale is inline in `data/compliance_scores.json`.
+Each dimension definition, scoring criterion, and per-dataset scores is inline in `data/compliance_scores.json`.
 
 ## Re-running the analysis
 
