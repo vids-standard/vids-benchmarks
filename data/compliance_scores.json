@@ -147,7 +147,7 @@
       "category": "Provenance",
       "dimension": "Annotator identity",
       "description": "Each annotation documents the identity (name or ID) of the annotator.",
-      "LIDC-IDRI": 0.5,
+      "LIDC-IDRI": 0.0,
       "BraTS": 0.0,
       "CheXpert": 0.0,
       "MSD": 0.0
@@ -187,7 +187,7 @@
       "category": "Provenance",
       "dimension": "QC review documented",
       "description": "Each annotation documents whether quality control review was performed, by whom, and the outcome.",
-      "LIDC-IDRI": 0.0,
+      "LIDC-IDRI": 0.5,
       "BraTS": 0.0,
       "CheXpert": 0.0,
       "MSD": 0.0
@@ -218,9 +218,9 @@
       "dimension": "Documented splits",
       "description": "Train/validation/test splits provided in structured format.",
       "LIDC-IDRI": 0.0,
-      "BraTS": 0.5,
-      "CheXpert": 0.5,
-      "MSD": 0.5
+      "BraTS": 1.0,
+      "CheXpert": 1.0,
+      "MSD": 1.0
     },
     {
       "id": "M2",
@@ -228,9 +228,9 @@
       "dimension": "Split rationale",
       "description": "Documentation of split strategy, random seed, leakage prevention, and rationale.",
       "LIDC-IDRI": 0.0,
-      "BraTS": 0.5,
-      "CheXpert": 0.5,
-      "MSD": 0.5
+      "BraTS": 0.0,
+      "CheXpert": 0.0,
+      "MSD": 0.0
     }
   ]
 }
