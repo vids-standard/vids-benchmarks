@@ -158,7 +158,7 @@
       "dimension": "Annotator credentials",
       "description": "Each annotation documents the qualifications and experience of the annotator.",
       "LIDC-IDRI": 0.5,
-      "BraTS": 0.5,
+      "BraTS": 0.0,
       "CheXpert": 0.0,
       "MSD": 0.0
     },
@@ -188,7 +188,7 @@
       "dimension": "QC review documented",
       "description": "Each annotation documents whether quality control review was performed, by whom, and the outcome.",
       "LIDC-IDRI": 0.5,
-      "BraTS": 0.0,
+      "BraTS": 0.5,
       "CheXpert": 0.0,
       "MSD": 0.0
     },
